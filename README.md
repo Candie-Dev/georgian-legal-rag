@@ -29,6 +29,9 @@
 git clone https://github.com/Candie-Dev/georgian-legal-rag.git
 cd georgian-legal-rag
 python -m venv venv
+source venv/Scripts/activate  # Windows-ზე
+pip install -r requirements.txt
+
 
 python extract_text.py      # კოდექსიდან ტექსტის ამოღება
 python create_embeddings.py # ემბედინგების შექმნა
@@ -41,5 +44,3 @@ python rag_agent.py         # აგენტის გაშვება
 
 
 
-source venv/Scripts/activate  # Windows-ზე
-pip install -r requirements.txt
